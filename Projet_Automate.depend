@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1584209020 source:h:\desktop\cour\cy tech\complément algo\projet_automate\main.c
+	<stdio.h>
+	<stdlib.h>
+
