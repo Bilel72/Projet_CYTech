@@ -2,7 +2,12 @@
 #include<stdlib.h>
 #include <stdbool.h>
 #include "Etat.h"
-
+/*
+    Ajoute un etat à un automate
+    @param automate : automate auquel on veut ajouter un etat
+    @param estInitial : true si l'etat est initial, false sinon
+    @param estFinal : true si l'etat est final, false sinon
+*/
 void ajouterEtat (AutomateFini *automate, bool estInitial, bool estFinal) { // OK
 
     int nombreEtats = 1 + automate -> nombreEtats ; // augmente le nombre d'etat de 1
@@ -26,7 +31,13 @@ void ajouterEtat (AutomateFini *automate, bool estInitial, bool estFinal) { // O
     }
 
 }
-
+/*
+    Modifie un etat d'un automate
+    @param automate : automate auquel on veut modifier un etat
+    @param numeroEtat : numero de l'etat a modifier
+    @param estInitial : true si l'etat est initial, false sinon
+    @param estFinal : true si l'etat est final, false sinon
+*/
 void modifierEtat (AutomateFini *automate, int numeroEtat, bool estInitial, bool estFinal) { // OK
 
     automate -> etats[numeroEtat].estFinal = estFinal ;
@@ -35,7 +46,11 @@ void modifierEtat (AutomateFini *automate, int numeroEtat, bool estInitial, bool
     }
 
 }
-
+/*
+    Supprime un etat d'un automate
+    @param automate : automate auquel on veut supprimer un etat
+    @param numeroEtat : numero de l'etat a supprimer
+*/
 void supprimerEtat (AutomateFini *automate, int numeroEtat ){ // Relou
 
 }

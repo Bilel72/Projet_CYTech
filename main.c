@@ -53,5 +53,7 @@ int main() {
     ajouterTransition(automate,automate -> etats[0],automate -> etats[1],1);
     ajouterTransition(automate,automate -> etats[0],automate -> etats[0],0);
 
+    AutomateFini *automate2 = malloc(sizeof(AutomateFini));
+    ajouterEtat(automate2,true,false);
     return 0;
 }
